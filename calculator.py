@@ -22,10 +22,10 @@ def divide(x, y):
         return "Error: Cannot divide by zero!"
 
 # Main function that drives the calculator program
-# Displays a menu, takes user input, and shows results
+# It displays a menu, takes user input, and then displays the result
 
 def main():
-    print("Simple Calculator")  # Title of the program
+    print("Simple Calculator")  # Program Title
     print("Select operation:")  # Prompt to choose an operation
     print("1. Add")         # Option 1 for addition
     print("2. Subtract")    # Option 2 for subtraction
@@ -33,7 +33,7 @@ def main():
     print("4. Divide")      # Option 4 for division
     print("5. Exit")        # Option 5 to quit the program
 
-    # Infinite loop: will keep asking until the user chooses to exit
+    # I also added an infinite loop so that the program keeps asking until the user chooses to exit
     while True:
         # Ask the user which operation they want to perform
         choice = input("Enter choice (1/2/3/4/5): ")
@@ -55,26 +55,32 @@ def main():
                 print("Invalid input: Please enter numeric values.")
                 continue  # Go back to the start of the loop
 
-            # Based on the user's choice, call the proper function
+            # Based on the user's choice, the proper function is called
             if choice == '1':
                 result = add(num1, num2)
-                op = '+'  # Symbol for addition
+                op = '+'  # Addition
             elif choice == '2':
                 result = subtract(num1, num2)
-                op = '-'  # Symbol for subtraction
+                op = '-'  # Subtraction
             elif choice == '3':
                 result = multiply(num1, num2)
-                op = '*'  # Symbol for multiplication
+                op = '*'  # Multiplication
             elif choice == '4':
                 result = divide(num1, num2)
-                op = '/'  # Symbol for division
+                op = '/'  # Division
 
-            # Show the complete calculation and its result
+            # This shows the complete calculation and its result
             print(f"{num1} {op} {num2} = {result}")
         else:
-            # If the user entered anything other than 1-5
+            # If the user enters anything other than 1-5, this message is shown
             print("Invalid choice: Please select a valid operation.")
 
 # This line ensures that main() is called when you run the script directly
 if __name__ == '__main__':
     main()
+
+
+# Follow up changes will be made later. I will add more features like:
+# - History of calculations
+# - Advanced operations like exponentiation, square root, etc.
+# - A graphical user interface (GUI) using Tkinter or PyQt
