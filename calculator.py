@@ -1,4 +1,4 @@
-# Simple Calculator with step-by-step explanations for absolute beginners
+# This is my first calculator program in Python
 
 # I defined a function to add two numbers and return their sum
 def add(x, y):
