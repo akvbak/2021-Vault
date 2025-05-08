@@ -36,7 +36,7 @@ The GitHub Contribution Generator is a Python script that allows you to programm
 
 Generate commits for a specific date range:
 ```bash
-python filename.py --start-date 2023-01-01 --end-date 2023-12-31
+python generate_commits.py --start-date 2021-07-01 --end-date 2021-12-31
 ```
 
 ### Advanced Configuration
